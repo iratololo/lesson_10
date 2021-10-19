@@ -1,0 +1,527 @@
+/* &display=swap&subset=cyrillic-ext */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,700,900&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: "Montserrat", sans-serif;
+	/* color: ; */
+	/* background-color: #f5f5f5; */
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ------------------------------ */
+
+.header__container,
+.catalog__container,
+.stock__container,
+.footer__container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+/* HEADER */
+
+.header {
+	background: linear-gradient(
+			to right,
+			rgba(49, 69, 255, 0.3) 0%,
+			rgba(49, 69, 255, 0.2) 10%,
+			rgba(49, 69, 255, 0.2) 90%,
+			rgba(49, 69, 255, 0.3) 100%
+		),
+		url("../img/header/main.jpg") 60% 20% / cover no-repeat;
+	padding: 50px 0px 150px;
+}
+
+.header__hat {
+	margin-bottom: 160px;
+}
+
+/* HEADER NAVIGATION*/
+.logo-link,
+.menu-main,
+.phone,
+.menu-main__link,
+.phone__number,
+.phone__btn {
+	display: inline-block;
+}
+
+.navigation__logo,
+.navigation__menu,
+.navigation__contact {
+	vertical-align: middle;
+}
+
+.navigation {
+	padding: 10px 0px;
+}
+
+.navigation__logo {
+	margin-right: 190px;
+}
+
+.navigation__menu {
+	margin-right: 180px;
+}
+
+/* HEADER LOGO-LINK*/
+
+.logo-link:hover .logo-link__img {
+	box-shadow: 0px 0px 5px #3145ff;
+}
+
+.logo-link__img {
+	border-radius: 50%;
+	vertical-align: bottom;
+	margin-right: 5px;
+}
+
+.logo-link__name {
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 120%;
+	text-transform: uppercase;
+	letter-spacing: 0.15px;
+	color: #3145ff;
+	vertical-align: bottom;
+}
+
+/* HEADER MENU*/
+.menu-main__link a {
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 120%;
+	color: #2a2d46;
+}
+
+.menu-main__link:not(:last-child) {
+	margin-right: 30px;
+}
+
+.menu-main__link a:hover {
+	color: #3145ff;
+}
+
+/* HEADER PHONE*/
+.phone__number {
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 120%;
+	color: #2a2d46;
+	margin-right: 30px;
+}
+
+.btn-phone {
+	color: #eb2d66;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 120%;
+	padding: 10px 15px;
+	border: 2px solid;
+}
+
+.btn-phone:hover {
+	color: #fff;
+	background-color: #eb2d66;
+	border: 2px solid #eb2d66;
+}
+
+/* HEADER OFFER*/
+
+.header__body {
+	color: #2a2d46;
+	max-width: 450px;
+}
+.header__title {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 130%;
+	margin-bottom: 30px;
+}
+
+.header__text {
+	line-height: 130%;
+	margin-bottom: 30px;
+	max-width: 370px;
+}
+
+.main-button {
+	color: #fff;
+	background-color: #eb2d66;
+	font-weight: 700;
+	line-height: 120%;
+	padding: 18px 40px;
+	display: inline-block;
+	letter-spacing: 0.15px;
+}
+
+.main-button:hover {
+	box-shadow: 0px 7px 15px rgba(235, 45, 102, 0.3);
+}
+/* MAIN */
+
+/* MAIN-CATALOG */
+
+.catalog {
+	padding: 50px 0px;
+}
+
+.catalog__hat {
+	margin-bottom: 50px;
+}
+
+/* NEW-HEAD */
+.title-basic {
+	font-size: 25px;
+	font-weight: 900;
+	letter-spacing: 0.15px;
+	line-height: 120%;
+	color: #2a2d46;
+}
+
+.head__title {
+	margin-bottom: 30px;
+}
+.catalog__row {
+	font-size: 0;
+}
+
+.catalog__row:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.catalog__item {
+	vertical-align: top;
+}
+
+.catalog__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.catalog__content {
+	margin-bottom: 50px;
+}
+
+/* NEW-CARD */
+.card {
+	display: inline-block;
+	padding: 25px 40px;
+	box-shadow: 0px 15px 50px rgba(67, 76, 109, 0.15);
+	max-width: 270px;
+}
+
+.card:hover {
+	box-shadow: 0px 15px 50px rgba(49, 69, 255, 0.25);
+}
+
+.card__title {
+	color: #2a2d46;
+	font-weight: 900;
+	font-size: 17px;
+	line-height: 120%;
+	margin-bottom: 20px;
+}
+
+.card__img {
+	max-width: 190px;
+	margin-bottom: 30px;
+}
+
+.card__img img {
+	max-width: 100%;
+}
+
+.card__specifications {
+	margin-bottom: 20px;
+}
+.card__text {
+	font-size: 12px;
+	line-height: 120%;
+	color: #42465c;
+	word-spacing: 5px;
+}
+
+.card__text:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.card__text span {
+	color: #2c3ba0;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.card__text span::after {
+	content: ":";
+}
+
+.card__price {
+	color: #3145ff;
+	font-weight: 900;
+	font-size: 17px;
+	line-height: 120%;
+}
+
+.catalog__btn {
+	text-align: center;
+}
+
+/* MAIN-STOCK*/
+
+.stock {
+	padding: 50px 0px;
+}
+
+.stock__title {
+	margin-bottom: 50px;
+}
+
+.stock__content {
+	font-size: 0;
+}
+
+.stock__block {
+	vertical-align: top;
+}
+
+.stock__block:not(:last-child) {
+	margin-right: 30px;
+}
+
+.item {
+	display: inline-block;
+	max-width: 570px;
+	padding: 150px 150px 60px 50px;
+}
+
+.item:hover {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.item_bg-blue {
+	background: linear-gradient(135deg, rgba(2, 120, 255, 0.2) 0%, rgba(2, 120, 255, 0.6) 100%),
+		url("../img/stock/scooter.jpg") 70% 50% / cover no-repeat;
+}
+
+.item_bg-purple {
+	background: linear-gradient(135deg, rgba(136, 49, 205, 0.2) 0%, rgba(136, 49, 205, 0.6) 100%),
+		url("../img/stock/music.jpg") 10% 10% / cover no-repeat;
+}
+.item__text {
+	color: #fff;
+	line-height: 120%;
+	font-size: 16px;
+	margin-bottom: 20px;
+	min-width: 350px;
+}
+
+.item__text_weight-size {
+	font-size: 27px;
+	font-weight: 900;
+}
+
+.item__btn {
+	font-size: 16px;
+}
+/* MAIN-IMPACT */
+
+.impact__container {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+.impact {
+	padding: 50px 0px 70px 0px;
+	font-family: "Roboto", sans-serif;
+}
+
+.impact__content {
+	background-color: #2ab1ad;
+	background: #2ab1ad url("../img/impact/bg.png") 80% 0% no-repeat;
+	padding: 0px 0px 190px 0px;
+}
+
+.impact__img {
+	margin: 0px 0px -235px auto;
+	max-width: 498px;
+}
+
+.impact__img img {
+	max-width: 100%;
+	border-radius: 45px;
+}
+
+.impact__body {
+	color: #fff;
+	padding: 110px 0px 0px;
+}
+
+.impact__hat {
+	max-width: 411px;
+	margin-bottom: 70px;
+}
+.subtitle-block {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	line-height: 120%;
+	padding: 6px 0px 0px 32px;
+	background: url("../img/impact/whitemark.svg") no-repeat;
+}
+
+.impact__subtitle {
+	margin-bottom: 30px;
+}
+
+.title-block {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 120%;
+}
+
+.impact__row {
+	font-size: 0;
+}
+
+.impact__item img {
+	margin-right: 15px;
+}
+
+.impact__item {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 237px;
+}
+
+.impact__item p {
+	text-transform: lowercase;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.15px;
+	line-height: 150%;
+	vertical-align: top;
+	color: #5d62b5;
+}
+
+.impact__item:not(:last-child) {
+	margin-right: 24px;
+}
+
+.impact__item span {
+	color: #fff;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 130%;
+}
+
+.impact__block {
+	background: #5d62b5;
+	border-radius: 20px;
+	padding: 43px 70px 48px 70px;
+	margin: -70px 0px 0px 0px;
+}
+
+.impact__text {
+	display: inline-block;
+	max-width: 562px;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 125%;
+	vertical-align: middle;
+	margin-right: 100px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.impact__btn {
+	vertical-align: middle;
+}
+
+.btn-impact {
+	text-transform: uppercase;
+	border-radius: 8px;
+	display: inline-block;
+	background-color: #f2726f;
+	color: #fff;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 0.15px;
+	text-align: center;
+	line-height: 120%;
+	padding: 15px 30px;
+}
+
+.btn-impact:hover {
+	box-shadow: 0 0 10px #a6aaff;
+}
+
+/*FOOTER*/
+
+.footer {
+	background-color: #383f6d;
+	padding: 80px 0px;
+}
+
+.logo-link__name_color {
+	color: #fff;
+}
+
+.menu-main__link_color-hover a {
+	color: #fff;
+}
+
+.menu-main__link_color-hover a:hover {
+	color: #bdc4ff;
+}
+
+.phone__number_color {
+	color: #fff;
+}
+
+.btn-phone_color {
+	color: #ffbed1;
+}
